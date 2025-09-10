@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing - TechFix Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="icon.png">
+  <style>
+    body {font-family: "Poppins", sans-serif; background: #f8f9fa; scroll-behavior: smooth;}
+
+    /* Navbar */
+    .navbar {background: rgba(0,0,0,0.85); backdrop-filter: blur(8px);}
+    .navbar-brand {font-weight: 700; font-size: 1.5rem;}
+
+    /* Header Section */
+    .page-header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+    }
+    .page-header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Section Titles */
+    .section-title {font-size: 2.2rem; font-weight: 700; margin: 60px 0 20px; text-align: center;}
+    .section-title::after {
+      content: ""; display: block; width: 70px; height: 4px;
+      background: #007bff; margin: 10px auto; border-radius: 2px;
+    }
+
+    /* Service Cards */
+    .service-card {
+      background: #fff; border-radius: 15px; padding: 30px;
+      text-align: center; transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%;
+    }
+    .service-card i {font-size: 40px; color: #007bff; margin-bottom: 15px;}
+    .service-card:hover {transform: translateY(-10px); box-shadow: 0 8px 20px rgba(0,0,0,0.2);}
+
+    /* Pricing Cards */
+    .pricing-card {
+      background: #fff; border-radius: 15px; padding: 30px;
+      text-align: center; transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%;
+    }
+    .pricing-card h4 {font-weight: 600;}
+    .pricing-card h2 {color: #007bff; font-weight: 700; margin: 15px 0;}
+    .pricing-card:hover {transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.15);}
+    .btn-choose {
+      background: linear-gradient(45deg, #007bff, #00c6ff);
+      border: none; color: #fff; font-weight: 600;
+      padding: 10px 20px; border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn-choose:hover {transform: scale(1.05); background: linear-gradient(45deg, #0056b3, #0099cc);}
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(135deg, #1e73e8, #267dee);
+      color: white;
+      padding: 60px 20px 30px;
+    }
+    .footer h5 {font-weight: 600; margin-bottom: 20px;}
+    .footer a {color: #ffffff; text-decoration: none; display: block; margin-bottom: 8px; transition: color 0.3s;}
+    .footer a:hover {color: #ffcc00;}
+    .footer .logo {font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;}
+    .footer .icon-text {display: flex; align-items: center; margin-bottom: 8px;}
+    .footer .icon-text i {margin-right: 10px; font-size: 1rem;}
+    .footer-bottom {text-align: center; margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px; font-size: 0.9rem; color: #ddd;}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">💻 TechFix Pro</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookservice.html">Book Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="page-header">
+  <h1>Our Services & Pricing</h1>
+  <p>Affordable, transparent, and professional tech repair solutions.</p>
+</header>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="service-card">
+          <i class="bi bi-tools"></i>
+          <h5>Hardware Repairs</h5>
+          <p>Screen, keyboard, battery, motherboard replacements and more.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="service-card">
+          <i class="bi bi-laptop"></i>
+          <h5>Software Solutions</h5>
+          <p>OS installation, virus removal, performance optimization, and recovery.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="service-card">
+          <i class="bi bi-lightning-charge"></i>
+          <h5>Upgrades</h5>
+          <p>Boost speed with SSD, RAM upgrades, and system enhancements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Pricing Plans</h2>
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="pricing-card w-100">
+          <h4>Battery Replacement</h4>
+          <p>Genuine replacement with 90-day warranty.</p>
+          <h2>$49</h2>
+          <button class="btn-choose">Choose Plan</button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="pricing-card w-100">
+          <h4>Screen Repair</h4>
+          <p>High-quality display replacements.</p>
+          <h2>$79</h2>
+          <button class="btn-choose">Choose Plan</button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="pricing-card w-100">
+          <h4>Keyboard Repair</h4>
+          <p>Fix stuck or non-working keys.</p>
+          <h2>$39</h2>
+          <button class="btn-choose">Choose Plan</button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="pricing-card w-100">
+          <h4>Data Recovery</h4>
+          <p>Recover lost files and documents safely.</p>
+          <h2>$99</h2>
+          <button class="btn-choose">Choose Plan</button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="pricing-card w-100">
+          <h4>Virus Removal</h4>
+          <p>Comprehensive scan & malware removal.</p>
+          <h2>$59</h2>
+          <button class="btn-choose">Choose Plan</button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="pricing-card w-100">
+          <h4>OS Installation</h4>
+          <p>Fresh installation with latest updates & drivers.</p>
+          <h2>$69</h2>
+          <button class="btn-choose">Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-3">
+        <div class="logo"><i class="fas fa-wrench"></i> TechFix Pro</div>
+        <p>Professional laptop and computer repair services. Fast, reliable, and affordable solutions for all your tech needs.</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#services">Services</a>
+        <a href="bookservice.html">Book Service</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- Our Services -->
+      <div class="col-md-3">
+        <h5>Our Services</h5>
+        <a href="#">Hardware Repair</a>
+        <a href="#">Software Installation</a>
+        <a href="#">Screen Replacement</a>
+        <a href="#">Battery Replacement</a>
+        <a href="#">Data Recovery</a>
+        <a href="#">Virus Removal</a>
+      </div>
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h5>Contact Info</h5>
+        <div class="icon-text"><i class="fas fa-phone"></i> +1 (555) 123-4567</div>
+        <div class="icon-text"><i class="fas fa-envelope"></i> info@techfixpro.com</div>
+        <div class="icon-text"><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</div>
+        <div class="icon-text"><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      © 2025 TechFix Pro. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

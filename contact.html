@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TechFix Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="icon.png">
+  <style>
+    body {font-family: "Poppins", sans-serif; background: #f8f9fa; scroll-behavior: smooth;}
+
+    /* Navbar */
+    .navbar {background: rgba(0,0,0,0.85); backdrop-filter: blur(8px);}
+    .navbar-brand {font-weight: 700; font-size: 1.5rem;}
+
+    /* Header Section */
+    .contact-header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: #fff;
+      padding: 100px 20px 80px;
+      text-align: center;
+    }
+    .contact-header h1 {font-weight: 700; font-size: 2.8rem;}
+    .contact-header p {font-size: 1.2rem; margin-top: 10px;}
+
+    /* Contact Info */
+    .contact-info {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      height: 100%;
+    }
+    .contact-info i {
+      font-size: 32px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .contact-info:hover {transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15);}
+
+    /* Form */
+    .contact-form {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .btn-submit {
+      background: linear-gradient(45deg, #007bff, #00c6ff);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 25px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #0056b3, #0099cc);
+    }
+
+    /* Map */
+    .map-container {border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%;}
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(135deg, #1e73e8, #267dee);
+      color: white;
+      padding: 60px 20px 30px;
+    }
+    .footer h5 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+    .footer a:hover {color: #ffcc00;}
+    .footer .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer .icon-text {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    .footer .icon-text i {
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 15px;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">💻 TechFix Pro</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookservice.html">Book Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="contact-header">
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you. Reach out with your queries or service requests!</p>
+</header>
+
+<!-- Contact Info -->
+<section id="contact" class="container py-5">
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="contact-info">
+        <i class="bi bi-telephone"></i>
+        <h5>Call Us</h5>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contact-info">
+        <i class="bi bi-envelope"></i>
+        <h5>Email Us</h5>
+        <p>support@techfixpro.com</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contact-info">
+        <i class="bi bi-geo-alt"></i>
+        <h5>Visit Us</h5>
+        <p>123 Main Street, Your City</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form & Map -->
+<section class="container py-5">
+  <div class="row g-4">
+    <!-- Form -->
+    <div class="col-lg-6">
+      <div class="contact-form">
+        <h4 class="mb-4">Send us a Message</h4>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Subject" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="col-lg-6">
+      <div class="map-container h-100">
+        <iframe src="https://maps.google.com/maps?width=500&height=400&hl=en&q=sla&t=&z=11&ie=UTF8&iwloc=B&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Company Info -->
+      <div class="col-md-6 col-lg-3">
+        <div class="logo">💻 TechFix Pro</div>
+        <p>Professional laptop and computer repair services. Fast, reliable, and affordable solutions for all your tech needs.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-6 col-lg-3">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="bookservice.html">Book Service</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Our Services -->
+      <div class="col-md-6 col-lg-3">
+        <h5>Our Services</h5>
+        <a href="#">Hardware Repair</a>
+        <a href="#">Software Installation</a>
+        <a href="#">Screen Replacement</a>
+        <a href="#">Battery Replacement</a>
+        <a href="#">Data Recovery</a>
+        <a href="#">Virus Removal</a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6 col-lg-3">
+        <h5>Contact Info</h5>
+        <div class="icon-text"><i class="bi bi-telephone"></i> +1 (555) 123-4567</div>
+        <div class="icon-text"><i class="bi bi-envelope"></i> info@techfixpro.com</div>
+        <div class="icon-text"><i class="bi bi-geo-alt"></i> 123 Tech Street, Digital City</div>
+        <div class="icon-text"><i class="bi bi-clock"></i> Mon-Fri: 9AM-6PM</div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom mt-4">
+      © 2025 TechFix Pro. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
